@@ -8,20 +8,22 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class ComidaResponseDto {
+public class MenuResponseDto {
 
     @Id
-    private int id;
+    private int idmenu;
     @Column
     private String nombre;
     @Column
-    private String descripcion;
-    @Column
-    private String precio;
-    @Column
-    private String imagen;
-    @Column
     private String categoria;
+    @Column
+    private String tipo;
     @Column
     private String estado;
 }
+
+//- idmenu / (Id del menu, autoincrementable)
+//- nombre / (nombre del menu)
+//- categoria  / (menu ejecutivo, menu del dia, menu a la carta, etc
+//- tipo   / (desayuno, almuerzo, cena)
+//- estado / (A/I)
